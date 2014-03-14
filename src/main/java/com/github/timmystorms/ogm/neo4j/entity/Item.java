@@ -23,7 +23,7 @@ public class Item {
     @Field(analyze = Analyze.NO)
     private String name;
     
-    @ManyToMany
+    @ManyToMany(mappedBy = "items")
     private Set<Person> persons;
     
     public Item() {
